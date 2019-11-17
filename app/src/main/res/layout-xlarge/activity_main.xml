@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/founder_img"
+            android:src="@drawable/founder_img"
+            android:layout_gravity="center"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+
+            />
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:padding="70dp"
+           android:scaleX="1.5"
+           android:scaleY="1.5">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/loan_button"
+               android:paddingRight="30dp"/>
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/product_button"
+               android:paddingLeft="30dp"/>
+       </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="70dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boarddirectors_button"
+            android:paddingRight="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/staff_button"
+            android:paddingLeft="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="70dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/history_button"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
