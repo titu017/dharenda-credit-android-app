@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.dcccul.dharendacredit.boardofdirectors.BoardofDirectorsActivity;
 import com.dcccul.dharendacredit.loan.LoanActivity;
 import com.dcccul.dharendacredit.product.ProductActivity;
+import com.dcccul.dharendacredit.staff.StaffActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button loanBtn_inMainActivity;
     Button productBtn_inMainActivity;
     Button boardDirectorsBtn_inMainActivity;
-    Button stuffBtn_inMainActivity;
+    Button staffBtn_inMainActivity;
     Button historyBtn_inMainActivity;
 
 
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         loanBtn_inMainActivity = findViewById(R.id.loanBtn_inMainActivity);
         productBtn_inMainActivity = findViewById(R.id.productBtn_inMainActivity);
         boardDirectorsBtn_inMainActivity = findViewById(R.id.boardDirectorsBtn_inMainActivity);
-        stuffBtn_inMainActivity = findViewById(R.id.stuffBtn_inMainActivity);
+        staffBtn_inMainActivity = findViewById(R.id.stuffBtn_inMainActivity);
         historyBtn_inMainActivity = findViewById(R.id.historyBtn_inMainActivity);
         //  <<<<    Initializtion ends here
 
@@ -62,6 +63,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, BoardofDirectorsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        staffBtn_inMainActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StaffActivity.class);
                 startActivity(intent);
             }
         });
