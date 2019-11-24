@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.dcccul.dharendacredit.boardofdirectors.BoardofDirectorsActivity;
+import com.dcccul.dharendacredit.founder.FounderActivity;
 import com.dcccul.dharendacredit.history.HistoryActivity;
 import com.dcccul.dharendacredit.loan.LoanActivity;
 import com.dcccul.dharendacredit.product.ProductActivity;
@@ -84,6 +85,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        founderIV_inMainActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FounderActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
        //   >>>>    toolbar section starts here
@@ -109,8 +118,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId()== R.id.noticeItemId){
-
-            Toast.makeText(this, "Notice Clicked", Toast.LENGTH_SHORT).show();
 
         } else if (item.getItemId()== R.id.noticeItemId) {
 

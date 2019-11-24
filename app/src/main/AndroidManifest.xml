@@ -28,7 +28,8 @@
 
         <activity android:name=".boardofdirectors.BoardofDirectorsActivity" />
         <activity android:name=".staff.StaffActivity" />
-        <activity android:name=".history.HistoryActivity"></activity>
+        <activity android:name=".history.HistoryActivity" />
+        <activity android:name=".founder.FounderActivity"></activity>
     </application>
 
 </manifest>
