@@ -1,8 +1,8 @@
-package com.dcccul.dharendacredit.product;
+package com.dcccul.dharendacredit.loan;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -13,10 +13,10 @@ import android.widget.Toast;
 
 import com.dcccul.dharendacredit.R;
 
-public class ProductDetailsActivity extends AppCompatActivity {
+public class LoanDetailsActivity extends AppCompatActivity {
 
     android.support.v7.widget.Toolbar toolbar;
-    TextView productName;
+    TextView loanName;
     Context context;
     Bundle extra;
     WebView webView;
@@ -24,16 +24,15 @@ public class ProductDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_detail);
+        setContentView(R.layout.activity_loan_detail);
 
-        webView = findViewById(R.id.webViewId_inProductDetailsActivity);
-        context = ProductDetailsActivity.this;
+        webView = findViewById(R.id.webViewId_inLoanDetailsActivity);
+        context = LoanDetailsActivity.this;
 
         //   >>>>    toolbar section starts here
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(null);
-
         // back arrow button set up starts here Part 1
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -49,7 +48,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
         if (!extra.equals(null)) {
 
-            String pName = extra.getString("PRODUCT_NAME_KEY");
+            String pName = extra.getString("LOAN_NAME_KEY");
 
 //            productName.setText(pName);
 

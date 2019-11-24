@@ -1,33 +1,33 @@
-package com.dcccul.dharendacredit.product;
+package com.dcccul.dharendacredit.loan;
 
-import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.dcccul.dharendacredit.R;
+import com.dcccul.dharendacredit.loan.LoanAdapter;
+import com.dcccul.dharendacredit.loan.LoanCollection;
 
-public class ProductDetailsActivity extends AppCompatActivity {
+public class LoanActivity extends AppCompatActivity {
 
     android.support.v7.widget.Toolbar toolbar;
-    TextView productName;
-    Context context;
-    Bundle extra;
-    WebView webView;
-
+    RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_detail);
+        setContentView(R.layout.activity_loan);
 
-        webView = findViewById(R.id.webViewId_inProductDetailsActivity);
-        context = ProductDetailsActivity.this;
+        recyclerView = findViewById(R.id.recyclerviewId_inLoanActivity);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        LoanAdapter loanAdapter = new LoanAdapter(this,LoanCollection.getLoanNames());
+        recyclerView.setAdapter(loanAdapter);
+
 
         //   >>>>    toolbar section starts here
         toolbar = findViewById(R.id.toolbar);
@@ -40,28 +40,11 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
         // back arrow button set up ends here Part 1
 
+
         toolbar.setPadding(0,15,0,0);
         toolbar.setContentInsetsAbsolute(0,0);
 
         //  <<<<    toolbar section ends here
-
-        extra = getIntent().getExtras();
-
-        if (!extra.equals(null)) {
-
-            String pName = extra.getString("PRODUCT_NAME_KEY");
-
-//            productName.setText(pName);
-
-            String url = "file:///android_asset/" + pName + ".html";
-            webView.loadUrl(url);
-
-            WebSettings webSettings = webView.getSettings();
-            webSettings.setBuiltInZoomControls(true);
-            webSettings.setDisplayZoomControls(false);
-            webSettings.setJavaScriptEnabled(true);
-
-        }
     }
 
 
@@ -80,7 +63,6 @@ public class ProductDetailsActivity extends AppCompatActivity {
             finish();
         }
         // back arrow button set up ends here Part 2
-
         if (item.getItemId()== R.id.noticeItemId){
 
             Toast.makeText(this, "Notice Clicked", Toast.LENGTH_SHORT).show();

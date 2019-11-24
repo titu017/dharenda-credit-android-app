@@ -10,7 +10,7 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar_product"/>
+        layout="@layout/toolbar_loan"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/open_sans_bold"
         android:gravity="center"
-        android:text="All Products"
+        android:text="Popular Loans"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:layout_marginBottom="30dp"
@@ -27,7 +27,7 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/recyclerviewId_inProductActivity">
+        android:id="@+id/recyclerviewId_inLoanActivity">
 
     </android.support.v7.widget.RecyclerView>
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="wrap_content"
     android:elevation="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/toolbar_color"
@@ -12,7 +12,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp">
+        >
 
 
 
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/title_actionbar_img"
             android:id="@+id/title_Tv"
-            android:text="Products"
+            android:text="Product Details"
             android:fontFamily="@font/open_sans_bold"
             android:textSize="20sp"
             android:textColor="@color/white"

@@ -19,7 +19,15 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".product.ProductActivity" />
-        <activity android:name=".product.ProductDetailsActivity"></activity>
+        <activity
+            android:name=".product.ProductDetailsActivity"
+            android:parentActivityName=".product.ProductActivity"
+            ></activity>
+
+        <activity android:name=".loan.LoanActivity"
+            />
+        <activity android:name=".loan.LoanDetailsActivity"></activity>
+
 
         <meta-data
             android:name="preloaded_fonts"

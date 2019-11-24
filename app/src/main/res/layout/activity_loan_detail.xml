@@ -8,12 +8,12 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar_productdetails"/>
+        layout="@layout/toolbar_loandetails"/>
 
     <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/webViewId_inProductDetailsActivity"
+        android:id="@+id/webViewId_inLoanDetailsActivity"
         android:background="@drawable/background_img"></WebView>
 
 </android.support.constraint.ConstraintLayout>
