@@ -1,5 +1,6 @@
 package com.dcccul.dharendacredit.founder;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,7 +10,10 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Toast;
 
+import com.dcccul.dharendacredit.MainActivity;
 import com.dcccul.dharendacredit.R;
+import com.dcccul.dharendacredit.menu.ContactUsActivity;
+import com.dcccul.dharendacredit.menu.CulturalAcademyActivity;
 
 public class FounderActivity extends AppCompatActivity {
     WebView webView;
@@ -64,13 +68,13 @@ public class FounderActivity extends AppCompatActivity {
         }
         // back arrow button set up ends here Part 2
 
-        if (item.getItemId()== R.id.noticeItemId){
+        if (item.getItemId()== R.id.culturalAcademyItemId){
+            Intent intent = new Intent(FounderActivity.this, CulturalAcademyActivity.class);
+            startActivity(intent);
 
-            Toast.makeText(this, "Notice Clicked", Toast.LENGTH_SHORT).show();
-
-        } else if (item.getItemId()== R.id.noticeItemId) {
-
-            Toast.makeText(this, "Notice Clicked", Toast.LENGTH_SHORT).show();
+        } else if (item.getItemId()== R.id.contactUsItemId) {
+            Intent intent = new Intent(FounderActivity.this, ContactUsActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

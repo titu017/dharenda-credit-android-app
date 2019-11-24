@@ -8,11 +8,6 @@
         app:showAsAction="never"
         />
 
-    <item
-        android:id="@+id/noticeItemId"
-        android:title="Notice"
-        app:showAsAction="never"
-        />
 
     <item
         android:id="@+id/contactUsItemId"

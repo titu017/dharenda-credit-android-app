@@ -1,4 +1,4 @@
-package com.dcccul.dharendacredit.boardofdirectors;
+package com.dcccul.dharendacredit.menu;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,22 +10,18 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-import com.dcccul.dharendacredit.MainActivity;
 import com.dcccul.dharendacredit.R;
-import com.dcccul.dharendacredit.menu.ContactUsActivity;
-import com.dcccul.dharendacredit.menu.CulturalAcademyActivity;
 
-public class BoardofDirectorsActivity extends AppCompatActivity {
-
+public class ContactUsActivity extends AppCompatActivity {
     WebView webView;
     android.support.v7.widget.Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_boardof_directors);
+        setContentView(R.layout.activity_contact_us);
 
-        webView = findViewById(R.id.webViewId_inBoardofDirectorsActivity);
+        webView = findViewById(R.id.webViewId_inContactUsActivity);
 
         //   >>>>    toolbar section starts here
         toolbar = findViewById(R.id.toolbar);
@@ -43,14 +39,13 @@ public class BoardofDirectorsActivity extends AppCompatActivity {
 
         //  <<<<    toolbar section ends here
 
-        String fileName = "file:///android_asset/Board of Directors.html";
+        String fileName = "file:///android_asset/Contact Us.html";
         webView.loadUrl(fileName);
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setBuiltInZoomControls(true);
         webSettings.setDisplayZoomControls(false);
         webSettings.setJavaScriptEnabled(true);
-
 
     }
 
@@ -71,11 +66,11 @@ public class BoardofDirectorsActivity extends AppCompatActivity {
         // back arrow button set up ends here Part 2
 
         if (item.getItemId()== R.id.culturalAcademyItemId){
-            Intent intent = new Intent(BoardofDirectorsActivity.this, CulturalAcademyActivity.class);
+            Intent intent = new Intent(ContactUsActivity.this, CulturalAcademyActivity.class);
             startActivity(intent);
 
         } else if (item.getItemId()== R.id.contactUsItemId) {
-            Intent intent = new Intent(BoardofDirectorsActivity.this, ContactUsActivity.class);
+            Intent intent = new Intent(ContactUsActivity.this, ContactUsActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);

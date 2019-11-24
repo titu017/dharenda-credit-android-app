@@ -1,5 +1,6 @@
 package com.dcccul.dharendacredit.loan;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,6 +13,8 @@ import android.widget.Toast;
 import com.dcccul.dharendacredit.R;
 import com.dcccul.dharendacredit.loan.LoanAdapter;
 import com.dcccul.dharendacredit.loan.LoanCollection;
+import com.dcccul.dharendacredit.menu.ContactUsActivity;
+import com.dcccul.dharendacredit.menu.CulturalAcademyActivity;
 
 public class LoanActivity extends AppCompatActivity {
 
@@ -63,13 +66,13 @@ public class LoanActivity extends AppCompatActivity {
             finish();
         }
         // back arrow button set up ends here Part 2
-        if (item.getItemId()== R.id.noticeItemId){
+        if (item.getItemId()== R.id.culturalAcademyItemId){
+            Intent intent = new Intent(LoanActivity.this, CulturalAcademyActivity.class);
+            startActivity(intent);
 
-            Toast.makeText(this, "Notice Clicked", Toast.LENGTH_SHORT).show();
-
-        } else if (item.getItemId()== R.id.noticeItemId) {
-
-            Toast.makeText(this, "Notice Clicked", Toast.LENGTH_SHORT).show();
+        } else if (item.getItemId()== R.id.contactUsItemId) {
+            Intent intent = new Intent(LoanActivity.this, ContactUsActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

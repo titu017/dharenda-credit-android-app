@@ -29,7 +29,9 @@
         <activity android:name=".boardofdirectors.BoardofDirectorsActivity" />
         <activity android:name=".staff.StaffActivity" />
         <activity android:name=".history.HistoryActivity" />
-        <activity android:name=".founder.FounderActivity"></activity>
+        <activity android:name=".founder.FounderActivity" />
+        <activity android:name=".menu.CulturalAcademyActivity" />
+        <activity android:name=".menu.ContactUsActivity"></activity>
     </application>
 
 </manifest>

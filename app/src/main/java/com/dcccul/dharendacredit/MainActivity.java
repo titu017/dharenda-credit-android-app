@@ -9,12 +9,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.dcccul.dharendacredit.boardofdirectors.BoardofDirectorsActivity;
 import com.dcccul.dharendacredit.founder.FounderActivity;
 import com.dcccul.dharendacredit.history.HistoryActivity;
 import com.dcccul.dharendacredit.loan.LoanActivity;
+import com.dcccul.dharendacredit.menu.ContactUsActivity;
+import com.dcccul.dharendacredit.menu.CulturalAcademyActivity;
 import com.dcccul.dharendacredit.product.ProductActivity;
 import com.dcccul.dharendacredit.staff.StaffActivity;
 
@@ -117,11 +118,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId()== R.id.noticeItemId){
+        if (item.getItemId()== R.id.culturalAcademyItemId){
+            Intent intent = new Intent(MainActivity.this, CulturalAcademyActivity.class);
+            startActivity(intent);
 
-        } else if (item.getItemId()== R.id.noticeItemId) {
-
-            Toast.makeText(this, "Notice Clicked", Toast.LENGTH_SHORT).show();
+        } else if (item.getItemId()== R.id.contactUsItemId) {
+            Intent intent = new Intent(MainActivity.this, ContactUsActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
