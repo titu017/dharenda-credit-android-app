@@ -27,7 +27,8 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".boardofdirectors.BoardofDirectorsActivity" />
-        <activity android:name=".staff.StaffActivity"></activity>
+        <activity android:name=".staff.StaffActivity" />
+        <activity android:name=".history.HistoryActivity"></activity>
     </application>
 
 </manifest>

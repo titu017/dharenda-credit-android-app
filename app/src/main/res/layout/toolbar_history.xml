@@ -12,21 +12,20 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo_actionbar_img"
-            android:id="@+id/logo_img"
+        >
 
 
-            android:layout_centerVertical="true"/>
-        <ImageView
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/title_actionbar_img"
-            android:id="@+id/title_Iv"
-            android:layout_toRightOf="@id/logo_img"
+            android:id="@+id/title_Tv"
+            android:text="History"
+            android:paddingLeft="-1dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
             android:layout_centerVertical="true"
             />
     </RelativeLayout>

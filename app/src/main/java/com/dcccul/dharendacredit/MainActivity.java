@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.dcccul.dharendacredit.boardofdirectors.BoardofDirectorsActivity;
+import com.dcccul.dharendacredit.history.HistoryActivity;
 import com.dcccul.dharendacredit.loan.LoanActivity;
 import com.dcccul.dharendacredit.product.ProductActivity;
 import com.dcccul.dharendacredit.staff.StaffActivity;
@@ -71,6 +72,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, StaffActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        historyBtn_inMainActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
                 startActivity(intent);
             }
         });
