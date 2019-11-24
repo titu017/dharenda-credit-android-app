@@ -1,0 +1,222 @@
+/*------------ Colors ---------------*/
+
+.sblue1 {
+    color: #0d47a1;
+}
+
+.sblue2 {
+    color: #4285F4;
+}
+
+.sblue3 {
+    color: #2871e0;
+}
+
+.sblue4 {
+    color: #1a3b82;
+}
+
+.sblue5 {
+    color: #4D88FC;
+}
+
+.swhite1 {
+    color: #ffffff;
+}
+
+
+/* Background Color */
+
+.sbg-blue1 {
+    background-color: #0d47a1;
+}
+
+.sbg-blue2 {
+    background-color: #4285F4;
+}
+
+.sbg-blue3 {
+    background-color: #2871e0;
+}
+
+.sbg-blue4 {
+    background-color: #1a3b82;
+}
+
+.sbg-blue5 {
+    background-color: #4D88FC;
+}
+
+.sbg-white1 {
+    background-color: #ffffff;
+}
+
+
+/*------------ Page Style -------------*/
+
+
+/*------------ Fonts -------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Bangla font */
+
+@font-face {
+    font-family: 'AdorshoLipi';
+    src: url('../fonts/AdorshoLipi.eot');
+    src: url('../fonts/AdorshoLipi.woff') format('woff'), url('../fonts/AdorshoLipi.ttf') format('truetype'), url('../fonts/AdorshoLipi.svg#AdorshoLipi') format('svg'), url('../fonts/AdorshoLipi.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bangla-font {
+    font-family: 'AdorshoLipi';
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+
+/* Banner Design */
+
+.upperBanner {
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+
+/* Navbar design */
+
+.w3-bar a:hover {
+    text-decoration: none;
+}
+
+.w3-bar-block a:hover {
+    text-decoration: none;
+}
+
+
+/*body part*/
+
+.imp-3 {
+    padding-top: 60px;
+}
+
+.titleBar {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    padding-left: 0;
+}
+
+.loan ul li {
+    margin-bottom: 1.5rem!important;
+    margin-top: 1.5rem!important;
+    font-family: 'AdorshoLipi';
+    text-align: justify!important;
+}
+
+
+/*footer part*/
+
+footer p {
+    font-size: 12px;
+}
+
+.social i {
+    font-size: 40px;
+    padding: 10px;
+}
+
+
+/*--------------- General Loan ----------------*/
+
+.loan {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.loan p {
+    line-height: 2;
+}
+
+
+/* ------------------------------------Gallery------------------------------------ */
+
+.gallery-block {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.gallery-block .heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.cards-gallery h6 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.gallery-block.cards-gallery .card {
+    transition: 0.4s easy;
+}
+
+.gallery-block.cards-gallery .card img {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-block.cards-gallery .card-body {
+    text-align: center;
+}
+
+.gallery-block.cards-gallery .card-body p {
+    font-size: 15px;
+}
+
+.gallery-block.cards-gallery a {
+    color: #212529;
+}
+
+.gallery-block.cards-gallery a:hover {
+    text-decoration: none;
+}
+
+.gallery-block.cards-gallery .card {
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 576px) {
+    .gallery-block .transform-on-hover:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+}
+
+
+/*------------------------------------ Gallery Ends --------------------------------*/
+
+
+/*------------------------------------ Board of Directors and Staffs --------------------------------*/
+
+.member img {
+    height: 300px;
+    padding: 40px;
+}
+
+#rindanporishod img {
+    height: 250px;
+    padding: 10px;
+}

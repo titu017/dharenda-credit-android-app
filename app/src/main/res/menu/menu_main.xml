@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/culturalAcademyItemId"
+        android:title="Cultural Academy"
+        app:showAsAction="never"
+        />
+
     <item
         android:id="@+id/noticeItemId"
         android:title="Notice"
         app:showAsAction="never"
         />
-    <item
-        android:id="@+id/downloadItemId"
-        android:title="Download"
-        app:showAsAction="never"
-        />
+
     <item
         android:id="@+id/contactUsItemId"
         android:title="Contact Us"

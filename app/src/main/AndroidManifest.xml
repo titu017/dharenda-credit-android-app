@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".SplashActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,19 +18,16 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".product.ProductActivity" />
-        <activity
-            android:name=".product.ProductDetailsActivity"
-            android:parentActivityName=".product.ProductActivity"
-            ></activity>
-
-        <activity android:name=".loan.LoanActivity"
-            />
-        <activity android:name=".loan.LoanDetailsActivity"></activity>
-
+        <activity android:name=".product.ProductDetailsActivity" />
+        <activity android:name=".loan.LoanActivity" />
+        <activity android:name=".loan.LoanDetailsActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".boardofdirectors.BoardofDirectorsActivity" />
+        <activity android:name=".staff.StaffActivity"></activity>
     </application>
 
 </manifest>

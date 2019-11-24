@@ -1,6 +1,5 @@
-package com.dcccul.dharendacredit.product;
+package com.dcccul.dharendacredit.boardofdirectors;
 
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,26 +7,21 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.dcccul.dharendacredit.R;
 
-public class ProductDetailsActivity extends AppCompatActivity {
+public class BoardofDirectorsActivity extends AppCompatActivity {
 
-    android.support.v7.widget.Toolbar toolbar;
-    TextView productName;
-    Context context;
-    Bundle extra;
     WebView webView;
+    android.support.v7.widget.Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_detail);
+        setContentView(R.layout.activity_boardof_directors);
 
-        webView = findViewById(R.id.webViewId_inProductDetailsActivity);
-        context = ProductDetailsActivity.this;
+        webView = findViewById(R.id.webViewId_inBoardofDirectorsActivity);
 
         //   >>>>    toolbar section starts here
         toolbar = findViewById(R.id.toolbar);
@@ -45,27 +39,16 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
         //  <<<<    toolbar section ends here
 
-        extra = getIntent().getExtras();
+        String fileName = "file:///android_asset/Board of Directors.html";
+        webView.loadUrl(fileName);
 
-        if (!extra.equals(null)) {
-
-            String pName = extra.getString("PRODUCT_NAME_KEY");
-
-//            productName.setText(pName);
-
-            String url = "file:///android_asset/" + pName + ".html";
-            webView.loadUrl(url);
-
-            WebSettings webSettings = webView.getSettings();
-            webSettings.setBuiltInZoomControls(true);
-            webSettings.setDisplayZoomControls(false);
-            webSettings.setJavaScriptEnabled(true);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(false);
+        webSettings.setJavaScriptEnabled(true);
 
 
-
-        }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
