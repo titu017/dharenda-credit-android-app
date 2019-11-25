@@ -17,13 +17,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar"
-        android:id="@+id/scrollView">
+        android:id="@+id/scrollView"
+        android:background="@drawable/background_img">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/scrollView"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -41,15 +43,15 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Loan"
                     android:layout_gravity="left"
                     android:id="@+id/loanBtn_inMainActivity"
-                    android:layout_marginBottom="10dp"/>
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/loan_button_img"/>
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Product"
+                    android:background="@drawable/products_button_img"
                     android:layout_gravity="right"
                     android:id="@+id/productBtn_inMainActivity"
                     android:layout_marginBottom="10dp"/>
@@ -57,7 +59,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Board Directors"
+                    android:background="@drawable/boarddirectors_button_img"
                     android:layout_gravity="left"
                     android:id="@+id/boardDirectorsBtn_inMainActivity"
                     android:layout_marginBottom="10dp"/>
@@ -65,7 +67,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Stuff"
+                    android:background="@drawable/staff_button_img"
                     android:layout_gravity="right"
                     android:id="@+id/stuffBtn_inMainActivity"
                     android:layout_marginBottom="10dp"/>
@@ -73,7 +75,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="History"
+                    android:background="@drawable/history_button_img"
                     android:layout_gravity="left"
                     android:id="@+id/historyBtn_inMainActivity"
                     android:layout_marginBottom="10dp"/>
