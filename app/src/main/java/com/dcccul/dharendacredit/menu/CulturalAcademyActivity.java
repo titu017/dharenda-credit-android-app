@@ -68,8 +68,7 @@ public class CulturalAcademyActivity extends AppCompatActivity {
         // back arrow button set up ends here Part 2
 
         if (item.getItemId()== R.id.culturalAcademyItemId){
-            Intent intent = new Intent(CulturalAcademyActivity.this, CulturalAcademyActivity.class);
-            startActivity(intent);
+            Toast.makeText(this, "You are already in this page", Toast.LENGTH_SHORT).show();
 
         } else if (item.getItemId()== R.id.contactUsItemId) {
             Intent intent = new Intent(CulturalAcademyActivity.this, ContactUsActivity.class);

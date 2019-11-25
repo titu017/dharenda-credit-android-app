@@ -8,12 +8,14 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.dcccul.dharendacredit.R;
 
 public class ContactUsActivity extends AppCompatActivity {
     WebView webView;
+    ImageView imageView;
     android.support.v7.widget.Toolbar toolbar;
 
     @Override
@@ -21,7 +23,8 @@ public class ContactUsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_us);
 
-        webView = findViewById(R.id.webViewId_inContactUsActivity);
+//        webView = findViewById(R.id.webViewId_inContactUsActivity);
+        imageView = findViewById(R.id.contactUsIV_inContactUsActivity);
 
         //   >>>>    toolbar section starts here
         toolbar = findViewById(R.id.toolbar);
@@ -39,13 +42,13 @@ public class ContactUsActivity extends AppCompatActivity {
 
         //  <<<<    toolbar section ends here
 
-        String fileName = "file:///android_asset/Contact Us.html";
-        webView.loadUrl(fileName);
-
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setBuiltInZoomControls(true);
-        webSettings.setDisplayZoomControls(false);
-        webSettings.setJavaScriptEnabled(true);
+//        String fileName = "file:///android_asset/Contact Us.html";
+//        webView.loadUrl(fileName);
+//
+//        WebSettings webSettings = webView.getSettings();
+//        webSettings.setBuiltInZoomControls(true);
+//        webSettings.setDisplayZoomControls(false);
+//        webSettings.setJavaScriptEnabled(true);
 
     }
 
@@ -70,8 +73,7 @@ public class ContactUsActivity extends AppCompatActivity {
             startActivity(intent);
 
         } else if (item.getItemId()== R.id.contactUsItemId) {
-            Intent intent = new Intent(ContactUsActivity.this, ContactUsActivity.class);
-            startActivity(intent);
+            Toast.makeText(this, "Already in this page", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }

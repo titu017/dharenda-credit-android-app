@@ -1,8 +1,10 @@
 package com.dcccul.dharendacredit;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -45,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
         staffBtn_inMainActivity = findViewById(R.id.stuffBtn_inMainActivity);
         historyBtn_inMainActivity = findViewById(R.id.historyBtn_inMainActivity);
         //  <<<<    Initializtion ends here
+
+
+
+
+
+
+
 
         productBtn_inMainActivity.setOnClickListener(new View.OnClickListener() {
             @Override
