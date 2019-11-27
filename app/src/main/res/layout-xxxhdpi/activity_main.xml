@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/scrollView"
+        android:background="@drawable/background_img">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scrollView"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/founderIV_inMainActivity"
+                android:src="@drawable/founder_img"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="-9dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="left"
+                    android:id="@+id/loanBtn_inMainActivity"
+                    android:background="@drawable/loan_button_img"/>
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="-9dp"
+                    android:background="@drawable/products_button_img"
+                    android:layout_gravity="right"
+                    android:id="@+id/productBtn_inMainActivity"
+                    />
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="-9dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/boarddirectors_button_img"
+                    android:layout_gravity="left"
+                    android:id="@+id/boardDirectorsBtn_inMainActivity"
+                    />
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="-9dp"
+                    android:background="@drawable/staff_button_img"
+                    android:layout_gravity="right"
+                    android:id="@+id/stuffBtn_inMainActivity"
+                    />
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="-9dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/history_button_img"
+                    android:layout_gravity="left"
+                    android:id="@+id/historyBtn_inMainActivity"
+                    />
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="-9dp"
+                    android:background="@drawable/presidents_speech_button_img"
+                    android:layout_gravity="right"
+                    android:id="@+id/presidentSpeechBtn_inMainActivity"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+    </RelativeLayout>
+
