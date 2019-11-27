@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dcccul.dharendacredit">
+    package="com.dcccul.dharendacredit"
+    >
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -9,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity"
+        <activity
+            android:name=".SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,8 +36,10 @@
         <activity android:name=".history.HistoryActivity" />
         <activity android:name=".founder.FounderActivity" />
         <activity android:name=".menu.CulturalAcademyActivity" />
-        <activity android:name=".menu.ContactUsActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".menu.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".presidentsspeech.PresidentsSpeechActivity"></activity>
     </application>
 
 </manifest>

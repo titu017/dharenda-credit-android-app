@@ -18,6 +18,7 @@ import com.dcccul.dharendacredit.history.HistoryActivity;
 import com.dcccul.dharendacredit.loan.LoanActivity;
 import com.dcccul.dharendacredit.menu.ContactUsActivity;
 import com.dcccul.dharendacredit.menu.CulturalAcademyActivity;
+import com.dcccul.dharendacredit.presidentsspeech.PresidentsSpeechActivity;
 import com.dcccul.dharendacredit.product.ProductActivity;
 import com.dcccul.dharendacredit.staff.StaffActivity;
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     Button boardDirectorsBtn_inMainActivity;
     Button staffBtn_inMainActivity;
     Button historyBtn_inMainActivity;
+    Button presidentsSpeechBtn_inPresidentActivity;
 
 
     android.support.v7.widget.Toolbar toolbar;
@@ -46,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         boardDirectorsBtn_inMainActivity = findViewById(R.id.boardDirectorsBtn_inMainActivity);
         staffBtn_inMainActivity = findViewById(R.id.stuffBtn_inMainActivity);
         historyBtn_inMainActivity = findViewById(R.id.historyBtn_inMainActivity);
+        presidentsSpeechBtn_inPresidentActivity = findViewById(R.id.presidentSpeechBtn_inMainActivity);
+
         //  <<<<    Initializtion ends here
 
 
@@ -99,6 +103,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FounderActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        presidentsSpeechBtn_inPresidentActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PresidentsSpeechActivity.class);
                 startActivity(intent);
             }
         });
